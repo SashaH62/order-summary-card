@@ -1,0 +1,296 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+html,
+button {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url(images/pattern-background-mobile.svg) no-repeat,
+    hsl(225, 100%, 94%);
+  background-size: contain;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.card-info {
+  padding: 2em 1.5em;
+}
+
+.order-card {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 90%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 19px 38px;
+}
+
+.header-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.summary h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.summary p {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  padding: 0 1em;
+}
+
+.plan-section {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.plan-section a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.plan-title {
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1em;
+}
+
+.payment-button {
+  display: block;
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  font-size: 15px;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 38px;
+  transition: all 0.2s ease-in-out;
+}
+
+.payment-button:hover,
+.payment-button:focus {
+  background-color: #766cf1;
+  cursor: pointer;
+}
+
+.cancel-button {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cancel-button:hover,
+.cancel-button:focus {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 575px) {
+  body {
+    background: url(images/pattern-background-desktop.svg) no-repeat top,
+      hsl(225, 100%, 94%);
+    background-size: 100%;
+  }
+
+  .order-card {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .summary h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-info {
+    padding: 3em;
+  }
+
+  .plan-section {
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .payment-button {
+    margin-bottom: 2em;
+  }
+}
